@@ -1,0 +1,10 @@
+.env
+data/raw/
+__pycache__/
+*.pyc
+.DS_Store
+# Python virtual environments
+venv*/
+env*/
+# BM25 binary indexes (rebuilt at startup from data/processed/*.jsonl)
+*.pkl

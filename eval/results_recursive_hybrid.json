@@ -1,0 +1,520 @@
+[
+  {
+    "question": "What was Alan Turing's contribution to the concept of computability?",
+    "answer": "Answer: Alan Turing's contribution to the concept of computability was the development of the Turing machine, a model of a general-purpose computer, and the publication of the paper \"On Computable Numbers, with an Application to the Entscheidungsproblem\" in May 1936, which provided a formalisation of the concepts of algorithm and computation.",
+    "faithfulness": 1.0,
+    "relevancy": 0.035,
+    "faithfulness_detail": {
+      "claims": [
+        "Alan Turing developed the Turing machine.",
+        "The Turing machine is a model of a general-purpose computer.",
+        "Alan Turing published a paper titled \"On Computable Numbers, with an Application to the Entscheidungsproblem\" in May 1936.",
+        "The paper provided a formalisation of the concepts of algorithm and computation."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "",
+        "",
+        ""
+      ],
+      "similarities": [
+        0.035,
+        0.035,
+        0.035
+      ],
+      "score": 0.035
+    },
+    "query_id": "q01",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "How does backpropagation adjust weights in a neural network?",
+    "answer": "Answer: Backpropagation adjusts weights in a neural network by computing the gradient of a loss function with respect to the weights of the network for a single input–output example, and doing so efficiently by computing the gradient one layer at a time, iterating backward from the last layer to avoid redundant calculations of intermediate terms in the chain rule. This can be derived through dynamic programming.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Backpropagation adjusts weights in a neural network.",
+        "Backpropagation computes the gradient of a loss function with respect to the weights of the network.",
+        "Backpropagation does so for a single input–output example.",
+        "Backpropagation does this efficiently by computing the gradient one layer at a time.",
+        "Backpropagation iterates backward from the last layer.",
+        "Backpropagation avoids redundant calculations of intermediate terms in the chain rule.",
+        "The method can be derived through dynamic programming."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q02",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What distinguishes a transformer model from a recurrent neural network?",
+    "answer": "Answer: A transformer model is distinguished from a recurrent neural network (RNN) in that transformers have no recurrent units, whereas RNNs have recurrent units that feed the output signal back into the input, allowing short-term memories of previous input events. Additionally, transformers are based on the multi-head attention mechanism, while RNNs can appear as nonlinear versions of finite impulse response and infinite impulse response filters and also as a nonlinear autoregressive exogenous model (NARX).",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Transformers have no recurrent units.",
+        "RNNs have recurrent units that feed the output signal back into the input.",
+        "Transformers are based on the multi-head attention mechanism.",
+        "RNNs can appear as nonlinear versions of finite impulse response and infinite impulse response filters.",
+        "RNNs can appear as a nonlinear autoregressive exogenous model (NARX)."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q03",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What is the role of attention mechanisms in sequence-to-sequence models?",
+    "answer": "Answer: Attention mechanisms in sequence-to-sequence models determine the importance of each component (token) in a sequence relative to the other components. This allows the model to capture global dependencies and handle long-range dependencies more effectively, making it particularly useful for natural language processing tasks. The Transformer architecture, which relies on self-attention mechanisms, has become the dominant architecture for many sequence-processing tasks due to its superior handling of long-range dependencies and greater parallelizability.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Attention mechanisms in sequence-to-sequence models determine the importance of each component (token) in a sequence relative to the other components.",
+        "This allows the model to capture global dependencies.",
+        "The model can handle long-range dependencies more effectively.",
+        "The model is particularly useful for natural language processing tasks.",
+        "The Transformer architecture relies on self-attention mechanisms.",
+        "The Transformer architecture has become the dominant architecture for many sequence-processing tasks.",
+        "The Transformer architecture's superior handling of long-range dependencies is a reason for its dominance.",
+        "The Transformer architecture is more parallelizable."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q04",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "How does word2vec represent semantic relationships between words?",
+    "answer": "Answer: Word2vec represents semantic relationships between words by mapping each word as a high-dimension vector of numbers, where words that appear in similar contexts are mapped to vectors that are nearby as measured by cosine similarity. This indicates the level of semantic similarity between the words.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Word2vec represents semantic relationships between words.",
+        "Each word is mapped as a high-dimension vector of numbers.",
+        "Words that appear in similar contexts are mapped to vectors that are nearby as measured by cosine similarity.",
+        "This indicates the level of semantic similarity between the words."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q05",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What are the key differences between supervised and reinforcement learning?",
+    "answer": "Answer: Supervised learning and reinforcement learning are two different paradigms in machine learning. Supervised learning attempts to discover patterns in labeled data, while reinforcement learning involves training an agent through interactions with its environment to maximize rewards. The key difference lies in the type of data and the objective: supervised learning uses labeled data to predict outcomes, while reinforcement learning uses interactions with the environment to learn the optimal balance between exploration and exploitation.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Supervised learning and reinforcement learning are two different paradigms in machine learning.",
+        "Supervised learning attempts to discover patterns in labeled data.",
+        "Reinforcement learning involves training an agent through interactions with its environment.",
+        "The objective of reinforcement learning is to maximize rewards.",
+        "Supervised learning uses labeled data to predict outcomes.",
+        "Reinforcement learning uses interactions with the environment to learn.",
+        "The key difference between supervised learning and reinforcement learning lies in the type of data and the objective."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q06",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What problem does named-entity recognition solve in NLP?",
+    "answer": "Answer: Named-entity recognition (NER) in NLP seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names (PER), organizations (ORG), locations (LOC), geopolitical entities (GPE), vehicles (VEH), medical codes, time expressions, quantities, monetary values, percentages, etc.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Named-entity recognition (NER) is a process in Natural Language Processing (NLP).",
+        "NER seeks to locate and classify named entities.",
+        "Named entities are mentioned in unstructured text.",
+        "Pre-defined categories for named entities include person names (PER), organizations (ORG), locations (LOC), geopolitical entities (GPE), vehicles (VEH), medical codes.",
+        "Time expressions, quantities, monetary values, and percentages are also categories for named entities."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q07",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "How does BERT use masked language modeling during pretraining?",
+    "answer": "Answer: BERT uses masked language modeling during pretraining by ingesting a sequence of words, where one word may be randomly changed (\"masked\"), and BERT tries to predict the original words that had been changed. This helps BERT learn bidirectional context, meaning it understands the relationships between words not just from left to right or right to left but from both directions at the same time.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "BERT uses masked language modeling during pretraining.",
+        "A sequence of words is ingested by BERT.",
+        "One word in the sequence may be randomly changed (\"masked\").",
+        "BERT tries to predict the original words that had been changed.",
+        "BERT learns bidirectional context.",
+        "BERT understands relationships between words not just from left to right.",
+        "BERT understands relationships between words not just from right to left."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q08",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What is the Markov assumption and how does it simplify sequence modeling?",
+    "answer": "Answer: The Markov assumption is that the probability of each event depends only on the state attained in the previous event. This simplifies sequence modeling by allowing predictions to be made regarding future outcomes based solely on the present state of the system, without needing to consider the entire history of the system. In other words, the future and past states are independent, given the present state.",
+    "faithfulness": 1.0,
+    "relevancy": 0.08,
+    "faithfulness_detail": {
+      "claims": [
+        "The Markov assumption is that the probability of each event depends only on the state attained in the previous event.",
+        "This simplifies sequence modeling.",
+        "Predictions can be made regarding future outcomes based solely on the present state of the system.",
+        "The future states are independent, given the present state."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        ""
+      ],
+      "similarities": [
+        0.08
+      ],
+      "score": 0.08
+    },
+    "query_id": "q09",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "How does GPT-3 differ from earlier language models in terms of scale?",
+    "answer": "Answer: GPT-3 is significantly larger in scale compared to its predecessors, with its capacity and number of parameters increased over two orders of magnitude.",
+    "faithfulness": 1.0,
+    "relevancy": -0.029,
+    "faithfulness_detail": {
+      "claims": [
+        "GPT-3 is larger in scale compared to its predecessors.",
+        "The capacity of GPT-3 is increased over its predecessors.",
+        "The number of parameters in GPT-3 is increased over its predecessors.",
+        "The increase in the capacity and number of parameters in GPT-3 is over two orders of magnitude."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "",
+        "",
+        ""
+      ],
+      "similarities": [
+        -0.029,
+        -0.029,
+        -0.029
+      ],
+      "score": -0.029
+    },
+    "query_id": "q10",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What is the purpose of the kernel trick in support vector machines?",
+    "answer": "Answer: The purpose of the kernel trick in support vector machines is to efficiently perform non-linear classification by implicitly mapping their inputs into high-dimensional feature spaces.",
+    "faithfulness": 1.0,
+    "relevancy": 0.075,
+    "faithfulness_detail": {
+      "claims": [
+        "The purpose of the kernel trick in support vector machines is to efficiently perform non-linear classification.",
+        "The kernel trick implicitly maps inputs into high-dimensional feature spaces."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        ""
+      ],
+      "similarities": [
+        0.075
+      ],
+      "score": 0.075
+    },
+    "query_id": "q11",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "How does a random forest reduce overfitting compared to a single decision tree?",
+    "answer": "Answer: A random forest reduces overfitting compared to a single decision tree by building multiple decision trees and averaging their predictions. This method, known as bootstrapped sampling, enables the model to reduce biased predictions and achieve a higher degree of accuracy, thus correcting for decision trees' habit of overfitting to their training set.",
+    "faithfulness": 1.0,
+    "relevancy": 0.03,
+    "faithfulness_detail": {
+      "claims": [
+        "A random forest reduces overfitting compared to a single decision tree.",
+        "A random forest builds multiple decision trees.",
+        "Predictions in a random forest are averaged.",
+        "This method is known as bootstrapped sampling.",
+        "Bootstrapped sampling helps reduce biased predictions.",
+        "The random forest achieves a higher degree of accuracy.",
+        "The random forest corrects for decision trees' habit of overfitting to their training set."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        ""
+      ],
+      "similarities": [
+        0.03
+      ],
+      "score": 0.03
+    },
+    "query_id": "q12",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What is the vanishing gradient problem in deep neural networks?",
+    "answer": "Answer: The vanishing gradient problem in deep neural networks refers to the exponential decrease of the gradient during backpropagation, which makes it difficult for the network to learn from distant events or long-term dependencies due to the small gradients. This problem is particularly prevalent in standard RNN architectures and is solved in the Independently Recurrent Neural Network (IndRNN) by reducing the context of a neuron to its own past state and the cross-neuron information can then be explored in the following layers.",
+    "faithfulness": 1.0,
+    "relevancy": 0.036,
+    "faithfulness_detail": {
+      "claims": [
+        "The vanishing gradient problem in deep neural networks exists.",
+        "The vanishing gradient problem is caused by an exponential decrease of the gradient during backpropagation.",
+        "The vanishing gradient problem makes it difficult for the network to learn from distant events or long-term dependencies.",
+        "The vanishing gradient problem is particularly prevalent in standard RNN architectures.",
+        "The Independently Recurrent Neural Network (IndRNN) is a solution to the vanishing gradient problem.",
+        "In IndRNN, the context of a neuron is reduced to its own past state.",
+        "In IndRNN, cross-neuron information can be explored in the following layers."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        ""
+      ],
+      "similarities": [
+        0.036
+      ],
+      "score": 0.036
+    },
+    "query_id": "q13",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "How does information retrieval differ from database querying?",
+    "answer": "Answer: Information retrieval differs from database querying in that the results returned may or may not match the query, and the results are typically ranked. In contrast, in database querying, the results returned should match the query exactly, and there is no ranking of results. Additionally, information retrieval is concerned with finding information in a document, document itself, or metadata, while database querying is focused on retrieving data from a database.",
+    "faithfulness": 0.5,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Information retrieval may or may not match the query.",
+        "The results in information retrieval are typically ranked.",
+        "In database querying, the results should match the query exactly.",
+        "There is no ranking of results in database querying.",
+        "Information retrieval is concerned with finding information in a document, document itself, or metadata.",
+        "Database querying is focused on retrieving data from a database."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.5
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q14",
+    "config": "recursive_hybrid"
+  },
+  {
+    "question": "What role did John McCarthy play in the founding of AI as a field?",
+    "answer": "Answer: John McCarthy played a significant role in the founding of AI as a field. He co-authored the proposal for the Dartmouth workshop which coined the term \"artificial intelligence\" (AI), and he was one of the \"founding fathers\" of AI, together with Alan Turing, Marvin Minsky, Allen Newell, and Herbert A. Simon.",
+    "faithfulness": 0.625,
+    "relevancy": 0.007,
+    "faithfulness_detail": {
+      "claims": [
+        "John McCarthy played a significant role in the founding of AI as a field.",
+        "He co-authored the proposal for the Dartmouth workshop.",
+        "The Dartmouth workshop was the one that coined the term \"artificial intelligence\" (AI).",
+        "John McCarthy is one of the \"founding fathers\" of AI.",
+        "Alan Turing is another \"founding father\" of AI.",
+        "Marvin Minsky is another \"founding father\" of AI.",
+        "Allen Newell is another \"founding father\" of AI.",
+        "Herbert A. Simon is another \"founding father\" of AI."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.625
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "",
+        "",
+        ""
+      ],
+      "similarities": [
+        0.007,
+        0.007,
+        0.007
+      ],
+      "score": 0.007
+    },
+    "query_id": "q15",
+    "config": "recursive_hybrid"
+  }
+]

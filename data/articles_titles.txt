@@ -1,0 +1,20 @@
+Artificial intelligence
+Machine learning
+Natural language processing
+Alan Turing
+John McCarthy (computer scientist)
+Markov chain
+Transformer (machine learning model)
+BERT (language model)
+GPT-3
+Recurrent neural network
+Convolutional neural network
+Backpropagation
+Support vector machine
+Random forest
+Reinforcement learning
+Word2vec
+Attention (machine learning)
+Named-entity recognition
+Question answering
+Information retrieval

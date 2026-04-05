@@ -1,0 +1,574 @@
+[
+  {
+    "question": "What was Alan Turing's contribution to the concept of computability?",
+    "answer": "Answer: Alan Turing contributed to the concept of computability by formalizing the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. He also introduced the concept of ordinal logic and the notion of relative computing, in which Turing machines are augmented with so-called oracles, allowing the study of problems that cannot be solved by Turing machines. According to the Church–Turing thesis, Turing machines and the lambda calculus are capable of computing anything that is computable.",
+    "faithfulness": 0.5,
+    "relevancy": 0.035,
+    "faithfulness_detail": {
+      "claims": [
+        "Alan Turing contributed to the concept of computability.",
+        "Alan Turing formalized the concepts of algorithm and computation with the Turing machine.",
+        "The Turing machine can be considered a model of a general-purpose computer.",
+        "Turing introduced the concept of ordinal logic.",
+        "Turing introduced the notion of relative computing.",
+        "Turing machines are augmented with oracles in relative computing.",
+        "Turing machines can study problems that cannot be solved by Turing machines with oracles.",
+        "According to the Church-Turing thesis, Turing machines and the lambda calculus are capable of computing anything that is computable."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 0.5
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "",
+        "",
+        ""
+      ],
+      "similarities": [
+        0.035,
+        0.035,
+        0.035
+      ],
+      "score": 0.035
+    },
+    "query_id": "q01",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "How does backpropagation adjust weights in a neural network?",
+    "answer": "Answer: Backpropagation adjusts weights in a neural network by computing the gradient of a loss function with respect to the weights of the network for a single input–output example, and doing so efficiently by computing the gradient one layer at a time, iterating backward from the last layer to avoid redundant calculations of intermediate terms in the chain rule; this can be derived through dynamic programming. The key point is that since the only way a weight in a layer affects the loss is through its effect on the next layer, and it does so linearly, the gradient of the weighted input of each layer, denoted by δl, are the only data you need to compute the gradients of the weights at layer l, and then the gradients of weights of previous layer can be computed by δl-1 and repeated recursively. This avoids inefficient calculations of unnecessary intermediate values.",
+    "faithfulness": 0.8,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Backpropagation adjusts weights in a neural network.",
+        "Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input–output example.",
+        "Backpropagation does so efficiently by computing the gradient one layer at a time.",
+        "Backpropagation iterates backward from the last layer to avoid redundant calculations of intermediate terms in the chain rule.",
+        "The gradient of the weighted input of each layer, denoted by δl, are the only data needed to compute the gradients of the weights at layer l.",
+        "The gradients of weights of previous layer can be computed by δl-1 and repeated recursively.",
+        "This method avoids inefficient calculations of unnecessary intermediate values.",
+        "The key point is that since the only way a weight in a layer affects the loss is through its effect on the next layer.",
+        "It does so linearly.",
+        "The gradient calculations can be derived through dynamic programming."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 0.8
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q02",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What distinguishes a transformer model from a recurrent neural network?",
+    "answer": "Answer: A transformer model is distinguished from a recurrent neural network (RNN) by its use of the multi-head attention mechanism, which allows it to process input data in parallel and capture long-range dependencies, whereas RNNs utilize recurrent connections, where the output of a neuron at one time step is fed back as input to the network at the next time step, capturing temporal dependencies but with a more sequential processing approach. Additionally, transformers do not suffer from the vanishing gradient problem that RNNs often experience when learning long-range dependencies.",
+    "faithfulness": 0.5,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "A transformer model uses the multi-head attention mechanism.",
+        "The multi-head attention mechanism allows a transformer model to process input data in parallel.",
+        "The multi-head attention mechanism allows a transformer model to capture long-range dependencies.",
+        "Recurrent Neural Networks (RNNs) utilize recurrent connections.",
+        "The output of a neuron at one time step in an RNN is fed back as input to the network at the next time step.",
+        "RNNs capture temporal dependencies.",
+        "RNNs have a more sequential processing approach compared to transformers.",
+        "Transformers do not suffer from the vanishing gradient problem that RNNs often experience when learning long-range dependencies."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.5
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q03",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What is the role of attention mechanisms in sequence-to-sequence models?",
+    "answer": "Answer: In sequence-to-sequence models, attention mechanisms determine the importance of each component in a sequence relative to the other components in that sequence. This is represented by \"soft\" weights assigned to each word in a sentence. The attention mechanism allows a token to have equal access to any part of a sentence directly, rather than only through the previous state, which addresses the weaknesses of using information from the hidden layers of recurrent neural networks.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "In sequence-to-sequence models, attention mechanisms determine the importance of each component in a sequence.",
+        "The importance is relative to the other components in that sequence.",
+        "The importance is represented by \"soft\" weights assigned to each word in a sentence.",
+        "The attention mechanism allows a token to have equal access to any part of a sentence directly.",
+        "In sequence-to-sequence models, a token does not only have access through the previous state.",
+        "This addresses the weaknesses of using information from the hidden layers of recurrent neural networks."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q04",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "How does word2vec represent semantic relationships between words?",
+    "answer": "Answer: Word2vec represents semantic relationships between words by mapping them to vectors in a high-dimensional space such that words that share common contexts in the corpus are positioned nearby in the vector space. This allows for the reproduction of semantic and syntactic patterns using vector arithmetic, such as \"Man is to Woman as Brother is to Sister\" can be generated through algebraic operations on the vector representations of these words.",
+    "faithfulness": 1.0,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Word2vec represents semantic relationships between words.",
+        "Word2vec maps words to vectors in a high-dimensional space.",
+        "Words that share common contexts in the corpus are positioned nearby in the vector space.",
+        "Semantic and syntactic patterns can be reproduced using vector arithmetic on the vector representations of words.",
+        "\"Man is to Woman as Brother is to Sister\" can be generated through algebraic operations on the vector representations of these words."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q05",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What are the key differences between supervised and reinforcement learning?",
+    "answer": "Answer: Supervised learning and reinforcement learning are two different paradigms in machine learning. In supervised learning, the algorithm is trained on a labeled dataset, where each example has both inputs and the desired output. The goal is to learn a function that can predict the output for new inputs. In reinforcement learning, the agent learns to take actions in an environment to maximize a reward signal through interactions with the environment. The key difference is that supervised learning requires labeled data, while reinforcement learning does not. Also, in supervised learning, the goal is to learn a function that can predict the output for new inputs, while in reinforcement learning, the goal is to learn a policy that maximizes the reward.",
+    "faithfulness": 0.571,
+    "relevancy": 0.907,
+    "faithfulness_detail": {
+      "claims": [
+        "Supervised learning and reinforcement learning are two different paradigms in machine learning.",
+        "In supervised learning, the algorithm is trained on a labeled dataset.",
+        "Each example in the dataset has both inputs and the desired output.",
+        "The goal in supervised learning is to learn a function that can predict the output for new inputs.",
+        "In reinforcement learning, the agent learns to take actions in an environment to maximize a reward signal.",
+        "The key difference is that supervised learning requires labeled data, while reinforcement learning does not.",
+        "In supervised learning, the goal is to learn a function that can predict the output for new inputs, while in reinforcement learning, the goal is to learn a policy that maximizes the reward."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 0.571
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "What distinguishes supervised learning from reinforcement learning in machine learning?",
+        "How do supervised learning and reinforcement learning differ in their approach to learning?",
+        "Can you explain the main contrasts between supervised learning and reinforcement learning?"
+      ],
+      "similarities": [
+        0.893,
+        0.925,
+        0.902
+      ],
+      "score": 0.907
+    },
+    "query_id": "q06",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What problem does named-entity recognition solve in NLP?",
+    "answer": "Answer: Named-entity recognition (NER) seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names (PER), organizations (ORG), locations (LOC), geopolitical entities (GPE), vehicles (VEH), medical codes, time expressions, quantities, monetary values, percentages, etc.",
+    "faithfulness": 0.692,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Named-entity recognition (NER) seeks to locate and classify named entities.",
+        "Named entities are mentioned in unstructured text.",
+        "Named entities are classified into pre-defined categories.",
+        "Pre-defined categories include person names (PER).",
+        "Pre-defined categories include organizations (ORG).",
+        "Pre-defined categories include locations (LOC).",
+        "Pre-defined categories include geopolitical entities (GPE).",
+        "Pre-defined categories include vehicles (VEH).",
+        "Pre-defined categories may include medical codes.",
+        "Pre-defined categories may include time expressions.",
+        "Pre-defined categories may include quantities.",
+        "Pre-defined categories may include monetary values.",
+        "Pre-defined categories may include percentages."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.692
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q07",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "How does BERT use masked language modeling during pretraining?",
+    "answer": "Answer: In masked language modeling, 15% of tokens would be randomly selected for masked-prediction task, and the training objective was to predict the masked token given its context. In more detail, the selected token is replaced with a [MASK] token with probability 80%, replaced with a random word token with probability 10%, not replaced with probability 10%. The reason not all selected tokens are masked is to avoid the dataset shift problem.",
+    "faithfulness": 0.5,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "15% of tokens are selected for the masked-prediction task in masked language modeling.",
+        "The training objective is to predict the masked token given its context.",
+        "With probability 80%, a token is replaced with a [MASK] token.",
+        "With probability 10%, a token is replaced with a random word token.",
+        "With probability 10%, a selected token is not replaced.",
+        "Not masking all selected tokens is done to avoid the dataset shift problem."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.5
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q08",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What is the Markov assumption and how does it simplify sequence modeling?",
+    "answer": "Answer: The Markov assumption, also known as the Markov property, states that the conditional probability distribution for the system at the next step (and in fact at all future steps) depends only on the current state of the system, and not additionally on the state of the system at previous steps. This assumption simplifies sequence modeling by allowing predictions to be made based solely on the present state of the system, without needing to consider the entire history of the system. In other words, conditional on the present state of the system, its future and past states are independent. This assumption is a key feature of Markov chains, a type of stochastic process that is widely used in various fields, including probability theory, statistics, and computer science.",
+    "faithfulness": 1.0,
+    "relevancy": 0.08,
+    "faithfulness_detail": {
+      "claims": [
+        "The Markov assumption, also known as the Markov property, is a key feature of Markov chains.",
+        "The Markov assumption states that the conditional probability distribution for the system at the next step (and in fact at all future steps) depends only on the current state of the system, and not additionally on the state of the system at previous steps.",
+        "The Markov assumption simplifies sequence modeling by allowing predictions to be made based solely on the present state of the system, without needing to consider the entire history of the system.",
+        "In other words, conditional on the present state of the system, its future and past states are independent.",
+        "The Markov assumption is widely used in various fields, including probability theory, statistics, and computer science."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "",
+        "",
+        ""
+      ],
+      "similarities": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "score": 0.08
+    },
+    "query_id": "q09",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "How does GPT-3 differ from earlier language models in terms of scale?",
+    "answer": "Answer: GPT-3 has over two orders of magnitude more capacity than its predecessor, GPT-2, making it the largest non-sparse language model at the time of its release. GPT-3 has 175 billion parameters, while GPT-2 has 1.5 billion parameters.",
+    "faithfulness": 0.333,
+    "relevancy": -0.029,
+    "faithfulness_detail": {
+      "claims": [
+        "GPT-3 is the largest non-sparse language model at the time of its release.",
+        "GPT-3 has 175 billion parameters.",
+        "GPT-2 has 1.5 billion parameters."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.333
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "",
+        "",
+        ""
+      ],
+      "similarities": [
+        -0.029,
+        -0.029,
+        -0.029
+      ],
+      "score": -0.029
+    },
+    "query_id": "q10",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What is the purpose of the kernel trick in support vector machines?",
+    "answer": "Answer: The purpose of the kernel trick in support vector machines is to implicitly map the input data into high-dimensional feature spaces, allowing for linear classification in these spaces, even when the original input data is non-linearly separable. This is achieved by replacing dot products with kernels in the optimization problem, which can be derived from the dual representation of the SVM problem.",
+    "faithfulness": 1.0,
+    "relevancy": 0.075,
+    "faithfulness_detail": {
+      "claims": [
+        "The purpose of the kernel trick in support vector machines is to map the input data into high-dimensional feature spaces.",
+        "The high-dimensional feature spaces allow for linear classification.",
+        "The original input data can be non-linearly separable.",
+        "The kernel trick enables linear classification in high-dimensional feature spaces even with non-linearly separable input data.",
+        "Kernels are used to replace dot products in the optimization problem.",
+        "The optimization problem can be derived from the dual representation of the SVM problem."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        ""
+      ],
+      "similarities": [
+        0.075
+      ],
+      "score": 0.075
+    },
+    "query_id": "q11",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "How does a random forest reduce overfitting compared to a single decision tree?",
+    "answer": "Answer: A random forest reduces overfitting compared to a single decision tree by averaging the predictions of multiple decision trees, each of which is trained on a different subset of the training data. This reduces the variance of the predictions, which is a common problem with deep decision trees that overfit their training sets. The random selection of features and random subspace selection used in the construction of the trees also help to control the variance and further reduce overfitting.",
+    "faithfulness": 1.0,
+    "relevancy": 0.956,
+    "faithfulness_detail": {
+      "claims": [
+        "A random forest reduces overfitting.",
+        "A random forest achieves reduction of overfitting by averaging the predictions of multiple decision trees.",
+        "Each of the decision trees in a random forest is trained on a different subset of the training data.",
+        "This method reduces the variance of the predictions.",
+        "High variance is a common problem with deep decision trees that overfit their training sets.",
+        "The random selection of features used in the construction of the trees helps to control the variance.",
+        "The random subspace selection used in the construction of the trees also helps to control the variance and further reduce overfitting."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "In what way does a random forest minimize overfitting compared to a single decision tree?",
+        "How does a random forest differ from a single decision tree in terms of overfitting reduction?",
+        "Can you explain how a random forest helps in reducing overfitting compared to a single decision tree?"
+      ],
+      "similarities": [
+        0.966,
+        0.941,
+        0.962
+      ],
+      "score": 0.956
+    },
+    "query_id": "q12",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What is the vanishing gradient problem in deep neural networks?",
+    "answer": "Answer: The vanishing gradient problem is a difficulty encountered during backpropagation in earlier neural networks, where the error gradients exponentially decrease with the size of the time lag between important events, making it difficult for the network to learn from long-term dependencies. This problem is solved in the LSTM and IndRNN architectures, and also in the transformer architecture, which is based on the multi-head attention mechanism.",
+    "faithfulness": 0.667,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "The vanishing gradient problem is a difficulty encountered during backpropagation in earlier neural networks.",
+        "The vanishing gradient problem is due to the error gradients exponentially decreasing with the size of the time lag between important events.",
+        "The vanishing gradient problem makes it difficult for the network to learn from long-term dependencies.",
+        "The vanishing gradient problem is solved in the LSTM (Long Short-Term Memory) architecture.",
+        "The vanishing gradient problem is solved in the IndRNN (Inductive Recurrent Neural Network) architectures.",
+        "The transformer architecture is based on the multi-head attention mechanism."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 0.667
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q13",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "How does information retrieval differ from database querying?",
+    "answer": "Answer: Information retrieval (IR) differs from database querying in several ways. In IR, a query does not uniquely identify a single object in the collection. Instead, several objects may match the query, perhaps with different degrees of relevance. An object is an entity that is represented by information in a content collection or database. User queries are matched against the database information. However, as opposed to classical SQL queries of a database, in IR the results returned may or may not match the query, so results are typically ranked. This ranking of results is a key difference of IR searching compared to database searching. IR systems compute a numeric score on how well each object in the database matches the query, and rank the objects according to this value. The top ranking objects are then shown to the user. The process may then be iterated if the user wishes to refine the query. In database querying, the results are exact matches to the query, and are not ranked.",
+    "faithfulness": 0.778,
+    "relevancy": 0.5,
+    "faithfulness_detail": {
+      "claims": [
+        "Information retrieval (IR) and database querying differ in several ways.",
+        "In IR, a query does not uniquely identify a single object in the collection.",
+        "An object in IR is an entity that is represented by information in a content collection or database.",
+        "User queries in IR are matched against the database information.",
+        "In IR, the results returned may or may not match the query, and are typically ranked.",
+        "IR systems compute a numeric score on how well each object in the database matches the query.",
+        "The top ranking objects are then shown to the user in IR.",
+        "In database querying, the results are exact matches to the query.",
+        "In database querying, the results are not ranked."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "NOT SUPPORTED",
+        "NOT SUPPORTED"
+      ],
+      "score": 0.778
+    },
+    "relevancy_detail": {
+      "alt_queries": [],
+      "similarities": [],
+      "score": 0.5,
+      "note": "No alt queries generated"
+    },
+    "query_id": "q14",
+    "config": "fixed_hybrid"
+  },
+  {
+    "question": "What role did John McCarthy play in the founding of AI as a field?",
+    "answer": "Answer: John McCarthy played a significant role in the founding of AI as a field. He was one of the founders of the discipline, along with Alan Turing, Marvin Minsky, Allen Newell, and Herbert A. Simon. McCarthy, Minsky, Nathaniel Rochester, and Claude E. Shannon coined the term \"artificial intelligence\" in a proposal that they wrote for the famous Dartmouth conference in Summer 1956, which started AI as a field.",
+    "faithfulness": 1.0,
+    "relevancy": 0.916,
+    "faithfulness_detail": {
+      "claims": [
+        "John McCarthy played a significant role in the founding of AI as a field.",
+        "John McCarthy was one of the founders of the discipline of AI.",
+        "Alan Turing, Marvin Minsky, Allen Newell, and Herbert A. Simon were also founders of the discipline of AI.",
+        "McCarthy, Minsky, Nathaniel Rochester, and Claude E. Shannon coined the term \"artificial intelligence\".",
+        "They coined the term \"artificial intelligence\" in a proposal.",
+        "The proposal was for the Dartmouth conference in Summer 1956.",
+        "The Dartmouth conference started AI as a field."
+      ],
+      "verdicts": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "score": 1.0
+    },
+    "relevancy_detail": {
+      "alt_queries": [
+        "In what way did John McCarthy contribute to the establishment of AI as a field of study?",
+        "What part did John McCarthy play in the inception of AI as an academic discipline?",
+        "How did John McCarthy impact the founding of AI as a field?"
+      ],
+      "similarities": [
+        0.908,
+        0.895,
+        0.947
+      ],
+      "score": 0.916
+    },
+    "query_id": "q15",
+    "config": "fixed_hybrid"
+  }
+]

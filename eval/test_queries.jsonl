@@ -1,0 +1,15 @@
+{"query_id": "q01", "question": "What was Alan Turing's contribution to the concept of computability?"}
+{"query_id": "q02", "question": "How does backpropagation adjust weights in a neural network?"}
+{"query_id": "q03", "question": "What distinguishes a transformer model from a recurrent neural network?"}
+{"query_id": "q04", "question": "What is the role of attention mechanisms in sequence-to-sequence models?"}
+{"query_id": "q05", "question": "How does word2vec represent semantic relationships between words?"}
+{"query_id": "q06", "question": "What are the key differences between supervised and reinforcement learning?"}
+{"query_id": "q07", "question": "What problem does named-entity recognition solve in NLP?"}
+{"query_id": "q08", "question": "How does BERT use masked language modeling during pretraining?"}
+{"query_id": "q09", "question": "What is the Markov assumption and how does it simplify sequence modeling?"}
+{"query_id": "q10", "question": "How does GPT-3 differ from earlier language models in terms of scale?"}
+{"query_id": "q11", "question": "What is the purpose of the kernel trick in support vector machines?"}
+{"query_id": "q12", "question": "How does a random forest reduce overfitting compared to a single decision tree?"}
+{"query_id": "q13", "question": "What is the vanishing gradient problem in deep neural networks?"}
+{"query_id": "q14", "question": "How does information retrieval differ from database querying?"}
+{"query_id": "q15", "question": "What role did John McCarthy play in the founding of AI as a field?"}
